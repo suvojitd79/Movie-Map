@@ -1,9 +1,9 @@
 
-#Movie-Map(Stage-1)
+# Movie-Map(Stage-1)
 
 API based android application.
 
-##Use
+## Use
 
 Just copy your own api key in string.xml(app->src->main->res->values->string.xml)
 
@@ -13,7 +13,7 @@ Just copy your own api key in string.xml(app->src->main->res->values->string.xml
 </resources>
 ```
 
-## Contributing
+### Contributing
 Pull requests are welcome. For major changes, please report an issue first to discuss what you would like to change.
 
 
