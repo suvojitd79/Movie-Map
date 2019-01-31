@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:checked="true"
+        android:id="@+id/setting_icon"
+        android:icon="@drawable/setting_icon"
+        android:title="Settings"
+        android:orderInCategory="2"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/refresh"
+        android:icon="@drawable/refresh_icon"
+        android:orderInCategory="3"
+        android:title="Refresh"
+        app:showAsAction="ifRoom"
+        />
+</menu>

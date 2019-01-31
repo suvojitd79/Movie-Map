@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/tootbar_title"
+        app:subtitle="@string/tootbar_sub_title"
+        app:titleTextAppearance="@style/ToolbarTextAppearance.Title"
+        app:subtitleTextAppearance="@style/ToolbarTextAppearance.Subtitle"
+        android:elevation="5dp"
+        android:theme="@style/Toolbar"
+        >
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_below="@+id/toolbar_main"
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:background="#1C1A1C"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/loading_gif"
+            android:scaleType="fitCenter"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@id/toolbar_main"
+            android:id="@+id/movie_recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <LinearLayout
+            android:background="#FFF"
+            android:visibility="gone"
+            android:layout_gravity="right"
+            android:id="@+id/linear_setting_part"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/movie_section_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_margin="10sp"
+                    android:padding="20dp"
+                    android:textSize="20sp"
+                    android:checked="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tootbar_sub_title"
+                    android:id="@+id/most_popular"
+                    />
+
+                <RadioButton
+                    android:layout_margin="10sp"
+                    android:padding="20dp"
+                    android:textSize="20sp"
+                    android:checked="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/toolbar_sub_title_"
+                    android:id="@+id/most_rated"
+                    />
+
+            </RadioGroup>
+
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_quality"
+                android:layout_margin="10sp"
+                android:padding="20dp"
+                android:textSize="20sp"
+                android:checked="false"
+                android:text="High quality image"
+                />
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Movie Map</string>
+    <string name="tootbar_title">Movieca</string>
+    <string name="tootbar_sub_title">Sorted by Highest rating ★★★</string>
+    <string name="toolbar_sub_title_">Sorted by most popular 🔥🔥🔥</string>
+
+        //api key
+    <string name="api_key">paste your key here</string>
+</resources>
